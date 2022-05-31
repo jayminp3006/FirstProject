@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="webpage.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jack's Wholesale</h1>
+    
+    <div class="card">
+        <h2 style="text-align:center">T-Shirts</h2>
+        <img src="images/tshirt.jpeg" alt="T-Shirts Photo" style="width:100%">
+        <h1 id="product_name_1">T-Shirts</h1>
+        <p id="price_1" class="price">$18.00</p>
+        <div id="myDIV">
+            This T-shirt is made from the best clothing material. And this product is very comfortable and flexible.
+        </div>
+        <button class="abutton" onclick="myFunction()">More details</button>
+       
+    </div>
+    <div class="card">
+        <h2 style="text-align:center">Jackets</h2>
+        <img src="images/j.jpeg" alt="Photo" style="width:100%">
+        <h1 id="product_name_1">Jackets</h1>
+        <p id="price_1" class="price">$50.00</p>
+        <div id="myDIV1">
+            This jacket has best cloth material and very comfortable and attractive.
+        </div>
+        <button class="abutton" onclick="myFunction1()">More details</button>
+
+    </div>
+    <div class="card">
+        <h2 style="text-align:center">Caps</h2>
+        <img src="images/cap.jpeg" alt="Photo" style="width:100%">
+        <h1 id="product_name_1">Caps</h1>
+        <p id="price_1" class="price">$10.00</p>
+        <div id="myDIV2">
+            This cap is very attractive and comfortable to wear in summers.
+        </div>
+        <button class="abutton" onclick="myFunction2()">More details</button>
+        
+    </div>
+    <div>
+    <form name="user" class="form">
+        <h3> Please fill below details first</h3>
+            <label> Number of T-Shirts :- </label>
+            <input type="text" name="quantity" id="q_tshirt" placeholder="Enter number of T-Shirts"><br>
+            <label> Number of Jackets :- </label>
+            <input type="text" name="quantity" id="q_jacket" placeholder="Enter number of Jackets"><br>
+            <label> Number of caps :- </label>
+            <input type="text" name="quantity" id="q_caps" placeholder="Enter number of Caps"><br>
+            <label> Customer Name :- </label>
+            <input type="text" name="name" id="name" placeholder="Enter your number"><br>
+             <label> Customer Phone :- </label>
+            <input type="number" name="number" id="number" placeholder="Enter your number"><br>
+             <input class="abutton" type="button" value="Add cart" onclick=invoice()>
+        </form>
+   </div>
+</body>
+</html>
